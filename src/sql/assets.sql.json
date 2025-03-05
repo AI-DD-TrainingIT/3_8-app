@@ -1,0 +1,11 @@
+{
+	"TABLE": "assets",
+	"CREATE_TABLE": "CREATE TABLE assets (id INTEGER PRIMARY KEY AUTOINCREMENT, category_id INTEGER, value DECIMAL, quantity INTEGER, acquisition_date DATE, user_id INTEGER, created_at DATETIME, updated_at DATETIME, FOREIGN KEY(category_id) REFERENCES categories(id), FOREIGN KEY(user_id) REFERENCES users(id))",
+	"SELECT_ALL": "SELECT * FROM assets",
+	"SELECT_BY_ID": "SELECT * FROM assets WHERE id = $id",
+	"SELECT_BY_USER_ID": "SELECT * FROM assets WHERE user_id = $user_id",
+	"SELECT_BY_CATEGORY_ID": "SELECT * FROM assets WHERE category_id = $category_id",
+	"INSERT": "INSERT INTO assets (category_id, value, quantity, acquisition_date, user_id, created_at, updated_at) VALUES ($category_id, $value, $quantity, $acquisition_date, $user_id, $created_at, $updated_at)",
+	"UPDATE": "UPDATE assets SET category_id = $category_id, value = $value, quantity = $quantity, acquisition_date = $acquisition_date, user_id = $user_id, updated_at = $updated_at WHERE id = $id",
+	"DELETE": "DELETE FROM assets WHERE id = $id"
+}

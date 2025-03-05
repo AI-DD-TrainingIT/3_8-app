@@ -1,0 +1,50 @@
+{
+	"editor.defaultFormatter": "biomejs.biome",
+	"editor.formatOnSave": true,
+	"github.copilot.chat.codeGeneration.instructions": [
+		{
+			"file": ".vscode/instructions/code.md"
+		}
+	],
+	"github.copilot.chat.commitMessageGeneration.instructions": [
+		{
+			"file": ".vscode/instructions/git.md"
+		}
+	],
+	"github.copilot.chat.reviewSelection.instructions": [
+		{
+			"file": ".vscode/instructions/review.md"
+		}
+	],
+	"github.copilot.chat.testGeneration.instructions": [
+		{
+			"file": ".vscode/instructions/test.md"
+		}
+	],
+	"material-icon-theme.activeIconPack": "none",
+	"material-icon-theme.folders.associations": {
+		"architect": "interface",
+		"builder": "interface",
+		"craftsman": "interface",
+		"domain": "interface",
+		"instructions": "rules",
+		"journals": "update",
+		".cursor": "quasar",
+		".ai": "robot"
+	},
+	"material-icon-theme.files.associations": {
+		"*.instructions.md": "architecture",
+		"*.blueprint.md": "dll",
+		"*.plan.md": "pascal",
+		"*.template.md": "ejs",
+		"*.prompt.md": "pascal",
+		"*.journal.md": "verified",
+		"*.component.ts": "templ",
+		"*.controller.ts": "c",
+		"*.page.ts": "routing",
+		"*.service.ts": "silcerstripe",
+		"*.repository.ts": "database",
+		"*.type.ts": "raml",
+		"*.utils.ts": "tilt"
+	}
+}

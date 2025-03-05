@@ -1,0 +1,31 @@
+{
+	"TABLE": "tools",
+	"CREATE_TABLE": "CREATE TABLE tools (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, description TEXT, url TEXT, created_at DATETIME, updated_at DATETIME)",
+	"SELECT_ALL": "SELECT * FROM tools",
+	"SELECT_BY_ID": "SELECT * FROM tools WHERE id = $id",
+	"INSERT": "INSERT INTO tools (name, description, url, created_at, updated_at) VALUES ($name, $description, $url, $created_at, $updated_at)",
+	"UPDATE": "UPDATE tools SET name = $name, description = $description, url = $url, updated_at = $updated_at WHERE id = $id",
+	"DELETE": "DELETE FROM tools WHERE id = $id",
+	"SEED": [
+		{
+			"name": "Bun",
+			"description": "Bun is a fast, modern, all-in-one toolkit for JavaScript.",
+			"url": "https://bun.sh/"
+		},
+		{
+			"name": "Pico CSS",
+			"description": "Pico CSS is a minimal CSS framework for semantic HTML.",
+			"url": "https://picocss.com/"
+		},
+		{
+			"name": "Playwright",
+			"description": "Playwright is a framework for browser automation and testing.",
+			"url": "https://playwright.dev/"
+		},
+		{
+			"name": "Vite",
+			"description": "Vite is a build tool for modern web development.",
+			"url": "https://vitejs.dev/"
+		}
+	]
+}
